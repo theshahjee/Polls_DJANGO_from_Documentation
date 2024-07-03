@@ -1,0 +1,7 @@
+<!-- add_choice.html -->
+<h2>Add Choice for "{{ question.question_text }}"</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Choice</button>
+</form>
